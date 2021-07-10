@@ -1,0 +1,45 @@
+/* header */
+.header {
+}
+
+.header__content {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  /* padding-right: 5rem; */
+}
+.navbar {
+  display: none;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+.menu-link {
+  display: inline-block;
+  font: var(--text);
+  color: var(--white);
+  transition: all 250ms ease;
+}
+.menu-link:hover {
+  transform: scale(0.9);
+  border-bottom: 1px solid var(--white);
+}
+
+.search {
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+  }
+}

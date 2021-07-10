@@ -1,0 +1,45 @@
+/* hero */
+.hero {
+  /* border: 3px solid red; */
+  /* height: 100vh; */
+  box-sizing: border-box;
+}
+.hero__content {
+  color: var(--white);
+  max-width: 31.25rem;
+  padding: 3rem 0;
+}
+
+.hero-title {
+  font: var(--headline2);
+}
+
+.hero-description {
+  font: var(--text);
+  margin: 0;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.hero-button {
+  background: var(--blue);
+  font: var(--text);
+  color: var(--white);
+  display: inline-block;
+  padding: 1rem 4rem;
+  vertical-align: middle;
+  transition: all 250ms ease;
+}
+.hero-button:active {
+  transform: scale(0.9);
+}
+.hero-button i {
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font: var(--headline1);
+  }
+}

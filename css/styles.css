@@ -1,21 +1,24 @@
-body {
-  margin: 0;
-  position: relative;
-  background: url("../images/hero.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 100vh;
+@import "./page.css";
+@import "./header.css";
+@import "./main.css";
+@import "./sidebar.css";
+@import "./hero.css";
+@import "./galerys.css";
+
+:root {
+  --fontbase1: "Bodoni Moda", serif;
+  --fontbase2: "Oxygen", sans-serif;
+  --headline1: bold 6rem/7rem var(--fontbase1);
+  --headline2: bold 3rem/3rem var(--fontbase1);
+  --text: 1rem/1.5rem var(--fontbase2);
+  --white: #ffffff;
+  --blue: rgba(44, 116, 255, 1);
+  --backgroundOverlay: rgba(0, 0, 0, 0.75);
+  --backgroundSidebar: rgba(0, 0, 0, 0.25);
 }
 
-body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(17, 17, 17, 0.5);
-  z-index: -1;
+body {
+  margin: 0;
 }
 
 ul {
@@ -31,145 +34,26 @@ h1 {
   font-weight: bold;
   margin: 0;
 }
+p {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
 
 .wrapper {
   max-width: 1300px;
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
-/* main */
-.page {
-  display: flex;
+@media screen and (min-width: 1336px) {
+  :root {
+    font-size: 12px;
+  }
 }
-
-.main {
-  flex: 1;
-}
-
-/* hero */
-.hero {
-  overflow: auto;
-}
-.hero__content {
-  max-width: 500px;
-  padding: 3rem 0;
-  color: #fff;
-}
-
-.hero-title {
-  font-size: 8rem;
-  font-weight: 700;
-  font-family: "Bodoni Moda", serif;
-  line-height: 112px;
-}
-
-.hero-description {
-  margin: 0;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-
-  font-size: 1rem;
-  letter-spacing: 1px;
-  font-family: "Oxygen", sans-serif;
-}
-
-.hero-button {
-  display: inline-block;
-  background: rgba(44, 116, 255, 1);
-  font-family: "Oxygen", sans-serif;
-  color: #fff;
-  padding: 1rem 4rem;
-  vertical-align: middle;
-  transition: all 250ms ease;
-}
-.hero-button:active {
-  transform: scale(0.9);
-}
-.hero-button i {
-  vertical-align: middle;
-}
-
-/* sidebar */
-.sidebar {
-  flex-basis: 80px;
-  /* border: 3px solid green; */
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.25);
-}
-
-.sidebar-menu {
-  height: 100px;
-  width: 100px;
-  background: rgba(44, 116, 255, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sidebar-menu i {
-  color: #fff;
-  font-size: 1.5rem;
-}
-.sidebar-sticks {
-  /* border: 2px solid yellow; */
-  padding: 1rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-  color: #fff;
-}
-.sidebar-sticks-item {
-  color: #fff;
-  font-family: "Oxygen", sans-serif;
-}
-
-/* header */
-.header {
-  /* border: 3px solid red; */
-}
-
-.header__content {
-  height: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  height: 40px;
-  width: 40px;
-  padding-right: 5rem;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 2.8rem;
-}
-
-.menu-link {
-  font-family: "Oxygen", sans-serif;
-  font-size: 1rem;
-  color: #fff;
-}
-
-.search {
-  color: #fff;
-}
-
-/* galery */
-.galerys__content {
-  padding: 3rem 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 200px;
-  place-content: center start;
-}
-
-.galerys-item {
-  border: 2px solid red;
+@media screen and (min-width: 1920px) {
+  :root {
+    font-size: 16px;
+  }
 }

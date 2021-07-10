@@ -1,0 +1,28 @@
+.page {
+  position: relative;
+  background-image: url("../images/hero.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  background: var(--backgroundOverlay);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.page > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    display: grid;
+  }
+}

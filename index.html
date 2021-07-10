@@ -23,12 +23,14 @@
         <header class="header">
           <div class="wrapper">
             <div class="header__content">
-              <img
-                class="logo"
-                src="./images/logo.svg"
-                alt="Logo Frederic Skinner"
-                title="Logo Frederic Skinner"
-              />
+              <a href="#">
+                <img
+                  class="logo"
+                  src="./images/logo.svg"
+                  alt="Logo Frederic Skinner"
+                  title="Logo Frederic Skinner"
+                />
+              </a>
               <nav class="navbar">
                 <ul class="menu">
                   <li class="menu-item">
@@ -51,7 +53,7 @@
             </div>
           </div>
         </header>
-        <section class="hero">
+        <section id="hero-1" class="hero">
           <div class="wrapper">
             <div class="hero__content">
               <h1 class="hero-title">Frederic Skinner</h1>
@@ -66,29 +68,42 @@
                 >Ver más <i class="fi-rs-angle-small-right"></i>
               </a>
             </div>
-          </div>
-        </section>
-        <section class="galerys">
-          <div class="wrapper">
-            <div class="galerys__content">
-              <div class="galerys-item"></div>
-              <div class="galerys-item"></div>
-              <div class="galerys-item"></div>
-            </div>
+            <section class="galerys">
+              <div class="galerys__content">
+                <div class="galerys-item">
+                  <img src="./images/image-galery-01.png" alt="" />
+                  <div class="overlay">
+                    <p class="overlay-text">Colaboraciones</p>
+                  </div>
+                </div>
+                <div class="galerys-item">
+                  <img src="./images/image-galery-02.png" alt="" />
+                  <div class="overlay">
+                    <p class="overlay-text">Experimentos</p>
+                  </div>
+                </div>
+                <div class="galerys-item">
+                  <img src="./images/image-galery-03.png" alt="" />
+                  <div class="overlay">
+                    <p class="overlay-text">Teoría de Skinner</p>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </section>
       </section>
       <nav class="sidebar">
         <div class="sidebar-menu"><i class="fi-rs-align-right"></i></div>
         <div class="sidebar-sticks">
-          <a class="sidebar-sticks-item" href="">
-            1968 <i class="fi-rs-minus"></i
+          <a class="sidebar-sticks-item" href="#hero-1">
+            1933 <i class="fi-rs-minus"></i
           ></a>
-          <a class="sidebar-sticks-item" href=""
+          <a class="sidebar-sticks-item" href="#hero-2"
             >1968 <i class="fi-rs-minus"></i
           ></a>
-          <a class="sidebar-sticks-item" href=""
-            >1968<i class="fi-rs-minus"></i
+          <a class="sidebar-sticks-item" href="#hero-3"
+            >1997 <i class="fi-rs-minus"></i
           ></a>
         </div>
       </nav>

@@ -1,0 +1,23 @@
+{
+  "name": "portafolio-frederic-skinner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "servor --browser --reload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidMarioLC/portafolio-frederic-skinner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidMarioLC/portafolio-frederic-skinner/issues"
+  },
+  "homepage": "https://github.com/DavidMarioLC/portafolio-frederic-skinner#readme",
+  "devDependencies": {
+    "servor": "^4.0.2"
+  }
+}
